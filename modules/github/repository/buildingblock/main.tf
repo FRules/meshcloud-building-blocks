@@ -6,6 +6,8 @@ resource "github_repository" "repository" {
   vulnerability_alerts = true
   archive_on_destroy   = true
 
+  web_commit_signoff_required = true
+
   dynamic "template" {
     for_each = var.use_template ? [1] : []
     content {
