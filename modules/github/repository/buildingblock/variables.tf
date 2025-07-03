@@ -1,18 +1,3 @@
-variable "github_app_id" {
-  type        = string
-  description = "GitHub App ID for authentication"
-}
-
-variable "github_app_installation_id" {
-  type        = string
-  description = "GitHub App Installation ID for authentication"
-}
-
-variable "github_app_private_key_file" {
-  type        = string
-  description = "GitHub App Private Key for authentication"
-}
-
 variable "repo_description" {
   type        = string
   default     = "created by github-repo-building-block"
